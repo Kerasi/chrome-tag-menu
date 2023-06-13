@@ -28,7 +28,6 @@
   transform: translate(-100%, -30px);
 }
 
-
 #tab-box {
   display: flex;
   align-items: center;
@@ -43,5 +42,12 @@
 }
 
 #tab-icon {
+  height: 20px;
+  width: 20px;
   margin-right: 6px;
+}
+
+#tab-icon img {
+  width: 20px;
+  max-width: none;
 }

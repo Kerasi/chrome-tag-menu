@@ -37,7 +37,7 @@ chrome.runtime.onMessage.addListener(function (tabs) {
     tabIcon.id = 'tab-icon';
 
     tabLink.textContent = tab.title;
-    tabIcon.innerHTML = tab.favIconUrl ? `<img src=${tab.favIconUrl} width="20px" height="20px" />` : earthIcon;
+    tabIcon.innerHTML = tab.favIconUrl ? `<img src="${tab.favIconUrl}" />` : earthIcon;
 
     tab.active ? tabLink.style.color = '#007BFF' : '';
 
