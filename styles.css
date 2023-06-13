@@ -29,10 +29,19 @@
 }
 
 
-#tab-content div {
-  margin: 6px 0;
+#tab-box {
+  display: flex;
+  align-items: center;
+  height: 33px;
+}
+
+#tab-link {
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#tab-icon {
+  margin-right: 6px;
 }
