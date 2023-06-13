@@ -15,4 +15,7 @@ chrome.runtime.onMessage.addListener(function (request) {
   if (request.activateTabId) {
     chrome.tabs.update(request.activateTabId, { active: true });
   }
+  if (request.closeTabId) {
+    chrome.tabs.remove(request.closeTabId)
+  }
 });
