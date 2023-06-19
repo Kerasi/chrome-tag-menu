@@ -76,8 +76,6 @@ chrome.runtime.onMessage.addListener(function (tabs) {
     tabList.appendChild(fragment);
     // 最后更新 HTML
     tabContent.appendChild(tabList);
-    // 恢复滚动位置
-    tabContent.scrollTop = oldScrollTop;
   });
 
 // 创建容器
